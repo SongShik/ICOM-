@@ -1,7 +1,8 @@
 body {
     margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
-
+    background-color:#f7f7f7 !important;
+    
   }
   
 /*  menu */
@@ -56,4 +57,70 @@ nav .navbar-nav li a{
 
 
 
+.box{
+  width: 300px;
+  height: 200px;
+  margin-right: auto;
+  margin-left: auto;
+ background-color: #fff;
+ border: 1px solid #d8d8d8;
+ border-radius: 7px;
+}
 
+.box:hover{
+  width: 300px;
+  height: 200px;
+  margin-right: auto;
+  margin-left: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
+}
+
+
+.box-esquerda{
+  width: 70px;
+  height: 200px;
+  padding-top: 20px;
+  float: left;
+}
+.box-direita{
+  width: 300px;
+  height: 100%;
+  padding-top: 20px;
+  padding-right: 5px;
+}
+
+.texto-cinza{
+  color: #545454;
+}
+
+/* teste de teste */
+.teste{
+  border: 1px solid #2B3E6E;
+}
+
+
+.teste2{
+  border: 1px solid #f15221;
+}
+
+
+.email{
+  border: 3px solid #fff !important;
+  background-color: #fff0 !important;
+  border-radius: 20px !important;
+  color: #fff !important;
+  
+}
+
+.email:hover{
+   border: 3px solid #fff !important;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+  
+}
+
+.email:focus{
+  border: 3px solid #fff !important;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+  
+}

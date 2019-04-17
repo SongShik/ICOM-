@@ -1,8 +1,8 @@
 body {
     margin: 0px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Galano Grotesque Alt', Arial, sans-serif !important;
     background-color:#f7f7f7 !important;
-    
+    color: #666 !important;
   }
   
 /*  menu */
@@ -54,8 +54,27 @@ nav .navbar-nav li a{
   font-weight: bold;
    
 }
+.email{
+  border: 3px solid #fff !important;
+  background-color: #fff0 !important;
+  border-radius: 20px !important;
+  color: #fff !important;
+  
+}
 
+.email:hover{
+   border: 3px solid #fff !important;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+  
+}
 
+.email:focus{
+  border: 3px solid #fff !important;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+  
+}
+
+/*vantagens*/
 
 .box{
   width: 300px;
@@ -89,9 +108,65 @@ nav .navbar-nav li a{
   padding-top: 20px;
   padding-right: 5px;
 }
+/* depoimentos */
+.img-depoimento{
+  width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+}
 
-.texto-cinza{
-  color: #545454;
+.depoimento-centralizar{
+  
+  width: 240px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.titulo-cinza{
+  color: #444444;
+  font-size: 25px;
+  font-weight: bold;
+ 
+}
+
+.sub-titulo{
+  color: #b7b297;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.logo-icon{
+  margin-left: auto;
+  margin-right: auto;
+  width: 250px;
+  
+}
+
+/*contato*/
+.map-responsive{
+  overflow:hidden;
+  padding-bottom:56.25%;
+  position:relative;
+  height:0;
+}
+.map-responsive iframe{
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+}
+
+.border-sombra{
+  box-shadow: 10px 10px 5px grey;
+}
+
+.imagem-localizacao{
+  margin-left: auto;
+  margin-right: auto;
+  
 }
 
 /* teste de teste */
@@ -102,25 +177,4 @@ nav .navbar-nav li a{
 
 .teste2{
   border: 1px solid #f15221;
-}
-
-
-.email{
-  border: 3px solid #fff !important;
-  background-color: #fff0 !important;
-  border-radius: 20px !important;
-  color: #fff !important;
-  
-}
-
-.email:hover{
-   border: 3px solid #fff !important;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
-  
-}
-
-.email:focus{
-  border: 3px solid #fff !important;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
-  
 }

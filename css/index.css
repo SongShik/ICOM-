@@ -3,6 +3,7 @@ body {
     font-family: 'Galano Grotesque Alt', Arial, sans-serif !important;
     background-color:#f7f7f7 !important;
     color: #666 !important;
+    
   }
   
 /*  menu */
@@ -39,7 +40,35 @@ nav .navbar-nav li a{
   
 /* carousel */
 
-.carousel-caption { top: 50%; bottom: auto; } 
+ 
+.titulo-slider{
+  font-size: 40px; 
+}
+
+.ICOM{
+  font-size: 80px;
+  font-weight: bold;
+ 
+}
+
+.overlay{
+  position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(179, 179, 179, 0.25);
+
+}
+.texto-icom{
+  color: #f15221;
+}
+
+.linha-icom{
+  margin-top: 65px;
+  background-color: #2B3E6E;
+  border: 1px solid #2B3E6E;
+  border-radius: 20px;
+}
+
 
 .linha{
   margin-top: 35px;
@@ -55,24 +84,64 @@ nav .navbar-nav li a{
    
 }
 .email{
-  border: 3px solid #fff !important;
-  background-color: #fff0 !important;
+
+  background-color: #fff !important;
   border-radius: 20px !important;
-  color: #fff !important;
-  
 }
 
 .email:hover{
-   border: 3px solid #fff !important;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
-  
 }
 
 .email:focus{
-  border: 3px solid #fff !important;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+}
+
+
+
+/*teste de background com div*/
+
+.imagem-principal{
+  height: 600px;
+  width: 100%;
+  background-image: url(../img/5.jpg);
+  background-repeat: no-repeat;
+  color: #fff;
+  background-position: center;
+  background-size: cover;
   
 }
+
+
+.margin{
+  padding-top: 280px;
+}
+
+.tamanho-input{
+  width: 800px;
+  height: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*vantagens*/
 
@@ -98,8 +167,9 @@ nav .navbar-nav li a{
 
 .box-esquerda{
   width: 70px;
-  height: 200px;
+  height: 100%;
   padding-top: 20px;
+  
   float: left;
 }
 .box-direita{
@@ -160,7 +230,7 @@ nav .navbar-nav li a{
 }
 
 .border-sombra{
-  box-shadow: 10px 10px 5px grey;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .imagem-localizacao{
@@ -178,3 +248,4 @@ nav .navbar-nav li a{
 .teste2{
   border: 1px solid #f15221;
 }
+

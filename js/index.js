@@ -19,7 +19,22 @@ for (var i = 0; i < numClass; i++) {
   }, false);
 }
 
+/* animação no scroll */
+$('nav a').click(function(e){
+ e.preventDefault();
 
+ var id = $(this).attr('href'),
+  targetOffset = $(id).offset().top;
+  $('html , body').animate({
+    scrollTop: targetOffset
+  }, 1200);
+
+
+});
+
+
+
+/* carousel */
 $(document).ready(function() {
   $("#depoimentos-carousel").on("slide.bs.carousel", function(e) {
     var $e = $(e.relatedTarget);
@@ -45,19 +60,79 @@ $(document).ready(function() {
   });
 });
 
-
+/* carrousel */
 $(document).ready(function(){
-  $("#testimonial-slider").owlCarousel({
-      items:3,
-      itemsDesktop:[1199,2],
-      itemsDesktopSmall:[979,2],
-      itemsTablet:[768,2],
-      itemsMobile:[600,1],
-      pagination:true,
-      navigation:false,
-      navigationText:["",""],
-      slideSpeed:1000,
-      autoPlay:true,
+  $('#seguradoras-slider').owlCarousel({
+      loop:true,
+      margin:10,
+      autoplay:true,
+      autoplayTimeout:2000,
+      
+      autoplayHoverPause:true,
+      responsive:{
+        0:{
+            items:1,
+        },
+        600:{
+            items:3,
+        },
+        1000:{
+            items:6,
+        }
+    }     
+  });
+
+  $("#depoimento-slider").owlCarousel({
+      loop:true,
+      autoplay:true,
+      autoplayTimeout:2000,
+      smartSpeed:1000,
+      responsive:{
+        0:{
+            items:1,
+        },
+        750:{
+            items:2,
+        },
+        1000:{
+            items:3,
+        }
+    }     
+  
      
   });
 });
+
+
+
+/* parallax */
+$('.parallax-window').parallax({imageSrc: 'img/5.jpg'}); 
+
+/* wow animated.css */ 
+new WOW().init();
+
+window.onresize=function() {
+  getDimensions()
+}
+
+
+/* teste taltura e largura tela
+    <div><span id="largura"></span>x<span id="altura"></span></div>
+*/
+function getDimensions() {
+  var largura = document.getElementById('largura'),
+      altura = document.getElementById('altura');
+  
+  largura.innerText = window.innerWidth;
+  altura.innerText = window.innerHeight;
+}
+
+getDimensions();
+
+jQuery(window).scroll(function () {
+  if (jQuery(this).scrollTop() > 0) {
+      jQuery(".fb-page").addClass("fixo");
+  } else {
+      jQuery(".fb-page").removeClass("fixo");
+  }
+ });

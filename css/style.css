@@ -37,17 +37,14 @@ li > a:hover:after{
 
 
 
-/*teste de background com div*/
-
+/*teste de background com div */
 .imagem-principal{
+
   height: 100vh;
-  width: 100%;
-  background-image: url(../img/5.jpg);
+  margin-bottom: 50px;
+
   color: #fff;
-  background-position: center;
-  background-size: cover;
-  }
-  
+ }
 .centro{
   height: 100vh;
   display: flex;
@@ -124,9 +121,71 @@ font-weight: bold;
  
 }
 
+.cotacao-email{
+  height: 32px;
+  width: 500px;
+  background-color: #fff !important;
+  border-radius: 20px !important; 
+  float: left;
+}
 
 
+.row-cotacao{
+width: 550px;
+height: 35px;
+background-color: #fff;
+border-radius: 20px;
+border: 1px solid  #dfe1e5;
 
+}
+
+.email{
+
+font-size: 20px;
+margin-top: 3px;
+width: 100%;
+text-align: center;
+display: flex;
+background: transparent; 
+border: none; 
+flex: 0 0 auto; 
+padding: 0;  
+outline-style: none !important;
+color: #666;
+}
+
+.email:hover,
+.email:focus
+.botao-cotacao:hover,
+.botao-cotacao:focus{
+outline-style: none;
+}
+
+.botao-cotacao{
+
+display: flex;
+background-repeat: no-repeat;
+border: none;
+background-color: transparent;
+cursor: pointer; 
+}
+
+.row-cotacao:hover,
+.cotacao-email:focus{
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+}
+
+/* icone com svg *-**/
+svg {
+  height: 26px;
+  width: 26px;
+  margin-top: 3px;
+}
+.st0 {
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+  fill: #535353;
+}
 
 /*vantagens*/
 .box-externo{
@@ -156,19 +215,45 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 }
 
+#pip::after{
+  content: url(../img/pip.png);
+}
+#maos::after{
+  content: url(../img/maos.png);
+}
+#money::after{
+  content: url(../img/money.png);
+}
+
 
 .box-esquerda{
-width: 70px;
 height: 100%;
+width: 70px;
 padding-top: 20px;
-
 float: left;
 }
+
+
+
 .box-direita{
 width: 300px;
 height: 100%;
 padding-top: 20px;
 padding-right: 5px;
+}
+
+.vantagnes-fundo{
+  background-color: #f15221;
+}
+
+.depoimentos-fundo{
+  background-image: url(../img/teste2.png);
+  margin-bottom: 50px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: fixed;
+  background-size: cover;
+  color: #fff;
 }
 
 /* depoimentos */
@@ -195,6 +280,11 @@ width: 250px;
 }
 
 /* testemunho com slider */
+#titulo-depoimentos{
+  color: #fff;
+}
+
+
 .testimonial{
   padding: 0 15px;
   text-align: center;
@@ -213,8 +303,8 @@ width: 250px;
 }
 .testimonial .description{
   padding: 0 15px;
-  font-size: 15px;
-  color: #808080;
+  font-size: 17px;
+  color: #fff;
   line-height: 26px;
 }
 .testimonial .testimonial-title{
@@ -225,7 +315,7 @@ width: 250px;
   position: relative;
 }
 .testimonial .testimonial-title:after{
-  content: url(/img/icon.png);
+  content: url(../img/icon.png);
   
   font-family: "Font Awesome 5 Free"; font-weight: 900;
   display: inline-block;
@@ -267,8 +357,28 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 margin-left: auto;
 margin-right: auto;
   }
+#localizacao::after{
+  content: url(../img/localizacao.png);
+}
+#telefone::after{
+  content: url(../img/telefone.png);
+}
+#email::after{
+  content: url(../img/email.png);
+}
 
-
+#nome::before{
+  content: url(../img/nome.png);
+}
+#email2::before{
+  content: url(../img/email2.png);
+}
+#titulo-email::before{
+  content: url(../img/titulo-email.png);
+}
+#mensagem::before{
+  content: url(../img/mensagem.png);
+}
  .carousel-control-prev-icon {
   background-image: url(../img/seta-pra-esquerda.png);
   width: 32px;
@@ -292,40 +402,32 @@ margin-right: auto;
   }
   
   
-  .teste2{
+.teste2{
   border: 1px solid #f15221;
-  }
-
-
-
-.iniciar-cotacao{
-  border-radius: 0;
-   height: 44px; 
-   width: 44px; 
-   background: transparent; 
-   border: none; 
-   cursor: pointer; 
-   flex: 0 0 auto; 
-  padding: 0; 
 }
 
-.iniciar-cotacao::after{
-  content: url(/img/search.png);
-  display: block;
+.fixo {
+  z-index: 199;
+  position: fixed;
+  top: 70px;
+ }
+
+.footer{
+  color: #fff;
 }
 
-.cotacao-email{
-  background-color: #fff !important;
-  border-radius: 20px !important; 
+#icon-facebook::before{
+  content: url(../img/facebook.png);
 }
 
+#icon-linkedin::before{
+  content: url(../img/linkedin.png);
+}
 
-  
-  .cotacao-email:hover{
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
-  }
-  
-  .cotacao-email:focus{
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
-  }
-  
+#icon-instagram::before{
+  content: url(../img/instagram.png);
+}
+
+.font-size-13{
+  font-size: 13px;
+}

@@ -95,6 +95,9 @@ $(document).ready(function(){
             items:2,
         },
         1000:{
+            items:2,
+        },
+        1300:{
             items:3,
         }
     }     
@@ -111,14 +114,75 @@ $('.parallax-window').parallax({imageSrc: 'img/5.jpg'});
 /* wow animated.css */ 
 new WOW().init();
 
-window.onresize=function() {
-  getDimensions()
-}
+
+/* validação dos campos com jquery validate
+$("#formulario-email").validate({
+  rules : {
+        nome:{
+               required:true,
+               minlength:3
+        },
+        email:{
+               required:true
+        },
+        assunto:{
+               required:true
+        },
+        mensagem:{
+               required:true
+        }                                
+  },
+  messages:{
+        nome:{
+               required:"Por favor, informe seu nome",
+               minlength:"O nome deve ter pelo menos 3 caracteres"
+        },
+        email:{
+               required:"É necessário informar um email"
+        },
+        assunto:{
+               required:"É necessário informar o titulo do email"
+        },
+        mensagem:{
+               required:"A mensagem não pode ficar em branco"
+        }     
+  }
+}); */
+
+$("#formulario-email").validate({
+  rules : {
+        nome:{
+               required:true,
+               minlength:3,
+               
+        },
+        email:{
+               required:true,
+               
+        },
+
+        mensagem:{
+               required:true
+        },                              
+  },
+  messages:{
+        nome:{
+               required:"Por favor, informe seu nome",
+               minlength:"O nome deve ter pelo menos 3 caracteres"
+        },
+        email:{
+               required:"É necessário informar um email"
+        },
+        mensagem:{
+               required:"A mensagem não pode ficar em branco"
+        }     
+  }
+}); 
 
 
 /* teste taltura e largura tela
     <div><span id="largura"></span>x<span id="altura"></span></div>
-*/
+
 function getDimensions() {
   var largura = document.getElementById('largura'),
       altura = document.getElementById('altura');
@@ -127,6 +191,9 @@ function getDimensions() {
   altura.innerText = window.innerHeight;
 }
 
+window.onresize=function() {
+  getDimensions()
+}
 getDimensions();
 
 jQuery(window).scroll(function () {
@@ -136,3 +203,4 @@ jQuery(window).scroll(function () {
       jQuery(".fb-page").removeClass("fixo");
   }
  });
+*/

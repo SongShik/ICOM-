@@ -242,9 +242,7 @@
                 <div class="col-md-12">
                     <div id="depoimento-slider" class="owl-carousel">
                         <div class="testimonial wow fadeInUp">
-                            <div class="pic" id="depoimento1">
-                               <!-- <img src="img/depoimento1.jpeg" alt="">-->
-                            </div>
+                            <div class="pic" id="depoimento1"> </div>
                             <p class="description">
                                 A qualidade, agilidade e ética no atendimento da ICOM não nos deixou dúvida, e hoje
                                 estamos com 100% de
@@ -254,9 +252,7 @@
                         </div>
 
                         <div class="testimonial wow fadeInUp" data-wow-delay="0.2s">
-                            <div class="pic">
-                                <img src="img/depoimento2.jpeg" alt="">
-                            </div>
+                        <div class="pic" id="depoimento2"> </div>
                             <p class="description">
                                 Trabalhar com a ICOM na implantação do benefício saúde da empresa foi fácil e
                                 descomplicado, os
@@ -266,9 +262,7 @@
                         </div>
 
                         <div class="testimonial wow fadeInUp" data-wow-delay="0.4s">
-                            <div class="pic">
-                                <img src="img/depoimento3.jpeg" alt="">
-                            </div>
+                        <div class="pic" id="depoimento3"> </div>
                             <p class="description">
                                 A ICOM é uma corretora comprometida e sempre com disponibilidade em nos ajudar. Nunca
                                 ficamos sem
@@ -279,9 +273,7 @@
                         </div>
 
                         <div class="testimonial wow fadeInUp" data-wow-delay="0.4s">
-                            <div class="pic">
-                                <img src="img/depoimento4.jpeg" alt="">
-                            </div>
+                        <div class="pic" id="depoimento4"> </div>
                             <p class="description">
                                 Os profissionais da ICOM são proativos, tem iniciativa e são extremamente competentes.
                                 A Gefran gostaria de agradecer a parceria e espera contar com a ICOM por um longo tempo.
@@ -295,7 +287,7 @@
 
 
     </section>
-  <!-- data-wow-duration="2s" data-wow-delay="2s" slideInUp -->
+
     <!--quem somos-->
     <section id="quemsomos">
         <div class="separator "><span class="titulo"> Quem somos </span></div>

@@ -72,7 +72,8 @@ $(document).ready(function(){
       autoplayHoverPause:true,
       responsive:{
         0:{
-            items:1,
+          autoWidth:true,
+          items:1,
         },
         600:{
             items:3,

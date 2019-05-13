@@ -319,6 +319,18 @@ width: 250px;
   content: url(../img/depoimento1.png);
   
 }
+#depoimento2::before{
+  content: url(../img/depoimento2.jpg);
+  
+}
+#depoimento3::before{
+  content: url(../img/depoimento3.jpg);
+  
+}
+#depoimento4::before{
+  content: url(../img/depoimento4.jpg);
+  
+}
 
 .testimonial .pic{
   display: inline-block;

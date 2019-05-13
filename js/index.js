@@ -67,6 +67,7 @@ $(document).ready(function(){
       margin:10,
       autoplay:true,
       autoplayTimeout:2000,
+      smartSpeed:1000,
       
       autoplayHoverPause:true,
       responsive:{
@@ -85,11 +86,13 @@ $(document).ready(function(){
   $("#depoimento-slider").owlCarousel({
       loop:true,
       autoplay:true,
-      autoplayTimeout:2000,
+      autoplayTimeout:5000,
       smartSpeed:1000,
       responsive:{
         0:{
             items:1,
+            autoplayTimeout:10000,
+            smartSpeed:1000,
         },
         750:{
             items:2,

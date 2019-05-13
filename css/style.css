@@ -9,7 +9,7 @@ body {
 /*  menu */
 .menu{
 background-color: #2B3E6E;
-
+box-shadow: 0 1px 10px 0 rgba(32,33,36,0.28);
 }
 
 
@@ -172,16 +172,15 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !im
 }
 
 /* icone com svg *-**/
-svg {
+.svg-buscar {
   height: 26px;
   width: 26px;
   margin-top: 3px;
+  fill-rule: evenodd !important;
+  clip-rule: evenodd !important;
+  fill: #535353 !important;
 }
-.st0 {
-  fill-rule: evenodd;
-  clip-rule: evenodd;
-  fill: #535353;
-}
+
 /* separador linha */
 .linha-icom{
   margin-top: 65px;
@@ -315,6 +314,12 @@ width: 250px;
   padding: 0 15px;
   text-align: center;
 }
+
+#depoimento1::before{
+  content: url(../img/depoimento1.png);
+  
+}
+
 .testimonial .pic{
   display: inline-block;
   width: 150px;
@@ -439,6 +444,43 @@ margin-right: auto;
   font-family: 'Maiden Orange', cursive !important;
 }
 
+/* rodape footer*/
+
+.footer{
+  color: #fff;
+}
+
+.font-size-13{
+  font-size: 13px;
+}
+
+.svg-face{
+  height: 32px;
+  width: 32px;
+  margin-top: 3px;
+  fill-rule: evenodd !important;
+  clip-rule: evenodd !important;
+  fill: #fcfcfc !important;
+}
+
+.svg-linkedim{
+  height: 32px;
+  width: 32px;
+  margin-top: 3px;
+  fill-rule: evenodd !important;
+  clip-rule: evenodd !important;
+  fill: #fcfcfc !important;
+}
+
+.svg-intagram{
+  height: 32px;
+  width: 32px;
+  margin-top: 3px;
+  fill-rule: evenodd !important;
+  clip-rule: evenodd !important;
+  fill: #fcfcfc !important;
+}
+
 
 /* teste de teste */
 .teste{
@@ -449,31 +491,4 @@ margin-right: auto;
 .teste2{
   border: 1px solid #f15221;
 }
-
-.fixo {
-  z-index: 199;
-  position: fixed;
-  top: 70px;
- }
-
-.footer{
-  color: #fff;
-}
-
-#icon-facebook::before{
-  content: url(../img/facebook.png);
-}
-
-#icon-linkedin::before{
-  content: url(../img/linkedin.png);
-}
-
-#icon-instagram::before{
-  content: url(../img/instagram.png);
-}
-
-.font-size-13{
-  font-size: 13px;
-}
-
 

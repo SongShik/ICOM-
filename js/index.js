@@ -118,40 +118,26 @@ $('.parallax-window').parallax({imageSrc: 'img/5.jpg'});
 /* wow animated.css */ 
 new WOW().init();
 
+$(function(){
+  $(document).on( 'scroll', function(){
+      if ($(window).scrollTop() > 100) {
+          $('div.smoothscroll-top, div.voltar-topo').addClass('show');
+      } else {
+          $('div.smoothscroll-top, div.voltar-topo').removeClass('show');
+      }
+  });
+  $('div.smoothscroll-top').on('click', scrollToTop);
+});
 
-/* validação dos campos com jquery validate
-$("#formulario-email").validate({
-  rules : {
-        nome:{
-               required:true,
-               minlength:3
-        },
-        email:{
-               required:true
-        },
-        assunto:{
-               required:true
-        },
-        mensagem:{
-               required:true
-        }                                
-  },
-  messages:{
-        nome:{
-               required:"Por favor, informe seu nome",
-               minlength:"O nome deve ter pelo menos 3 caracteres"
-        },
-        email:{
-               required:"É necessário informar um email"
-        },
-        assunto:{
-               required:"É necessário informar o titulo do email"
-        },
-        mensagem:{
-               required:"A mensagem não pode ficar em branco"
-        }     
-  }
-}); */
+function scrollToTop() {
+  verticalOffset = typeof(verticalOffset) != 'undefined' ? verticalOffset : 0;
+  element = $('body');
+  offset = element.offset();
+  offsetTop = offset.top;
+  $('html, body').animate({scrollTop: offsetTop}, 600, 'linear');
+}
+/* validação dos campos com jquery validate*/
+
 
 $("#formulario-email").validate({
   rules : {
@@ -184,27 +170,4 @@ $("#formulario-email").validate({
 }); 
 
 
-/* teste taltura e largura tela
-    <div><span id="largura"></span>x<span id="altura"></span></div>
 
-function getDimensions() {
-  var largura = document.getElementById('largura'),
-      altura = document.getElementById('altura');
-  
-  largura.innerText = window.innerWidth;
-  altura.innerText = window.innerHeight;
-}
-
-window.onresize=function() {
-  getDimensions()
-}
-getDimensions();
-
-jQuery(window).scroll(function () {
-  if (jQuery(this).scrollTop() > 0) {
-      jQuery(".fb-page").addClass("fixo");
-  } else {
-      jQuery(".fb-page").removeClass("fixo");
-  }
- });
-*/

@@ -6,6 +6,10 @@ body {
   
 }
 
+.laranja-m{
+  color: #f15221;
+}
+
 /*  menu */
 .menu{
 background-color: #2B3E6E;
@@ -493,6 +497,27 @@ margin-right: auto;
   fill: #fcfcfc !important;
 }
 
+#img-abrasel{
+  background-image: url(../img/abrasel.png);
+  width: 150px;
+  height: 75px;
+}
+
+#img-socio-campeao{
+  background-image: url(../img/sociocampeao.png);
+  width: 150px;
+  height: 75px;
+
+}
+.barra-laranja{
+  width: 1px;
+  height: 100%;
+  border: 2px solid #f15221;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* botao voltar o topo*/
 .smoothscroll-top {
   position:fixed;
@@ -528,7 +553,7 @@ margin-right: auto;
     fill: rgb(190, 190, 190);
   }
 
-/* teste de teste *//* teste de teste *//* teste de teste *//* teste de teste *//* teste de teste *//* teste de teste */
+
 .voltar-topo{
   position:fixed;
   z-index:1;

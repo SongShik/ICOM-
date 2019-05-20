@@ -136,7 +136,6 @@ function scrollToTop() {
   offsetTop = offset.top;
   $('html, body').animate({scrollTop: offsetTop}, 600, 'linear');
 }
-/* validação dos campos com jquery validate*/
 
 
 $("#formulario-email").validate({

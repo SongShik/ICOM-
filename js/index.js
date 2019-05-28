@@ -139,6 +139,39 @@ function scrollToTop() {
 }
 
 
+
+
+function abrirSeguro(evt, seguro) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  
+  for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+     
+
+  if (seguro == "odonto"){
+    $('#tipos-seguros-fundo').removeClass('tipos-seguros-fundo3');
+    $('#tipos-seguros-fundo').addClass('tipos-seguros-fundo2');
+  }else{
+    $('#tipos-seguros-fundo').removeClass('tipos-seguros-fundo2');
+    $('#tipos-seguros-fundo').addClass('tipos-seguros-fundo3');
+  }
+
+  }
+  
+  document.getElementById(seguro).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// elemento quando abrir a pagina
+document.getElementById("defaultOpen").click();
+$('#tipos-seguros-fundo').addClass('tipos-seguros-fundo2');
+
 $("#formulario-email").validate({
   rules : {
         nome:{
@@ -168,33 +201,3 @@ $("#formulario-email").validate({
         }     
   }
 }); 
-
-function abrirSeguro(evt, seguro) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  
-  for (i = 0; i < tabcontent.length; i++) {
-      tabcontent[i].style.display = "none";
-
-  }
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-      tablinks[i].className = tablinks[i].className.replace(" active", "");
-     
-
-  if (seguro == "odonto"){
-    $('#tipos-seguros-fundo').removeClass('tipos-seguros-fundo3');
-    $('#tipos-seguros-fundo').addClass('tipos-seguros-fundo2');
-  }else{
-    $('#tipos-seguros-fundo').removeClass('tipos-seguros-fundo2');
-    $('#tipos-seguros-fundo').addClass('tipos-seguros-fundo3');
-  }
-
-  }
-  
-  document.getElementById(seguro).style.display = "block";
-  evt.currentTarget.className += " active";
-}
-
-// Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();

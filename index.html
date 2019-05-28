@@ -44,8 +44,8 @@
     <!-- imagem principal -->
     <section>
 
-        <div class="parallax-window imagem-principal  text-center overlay " 
-            >
+        <div class="parallax-window imagem-principal  text-center overlay " >
+ 
             <div class=" centro ">
                 <div class="container-fluid">
 
@@ -67,7 +67,7 @@
                         action="http://13.82.100.46/icomcotacao/save-email">
                         <div class="row row-cotacao wow fadeInUp">
                             <div class="col-10 ">
-                                <input type="email" class="email "
+                                <input type="email" class="email " required
                                     placeholder="Insira seu email para começar a cotação">
                             </div>
 
@@ -222,6 +222,77 @@
         </div>
 
     </section>
+
+
+    
+    <!-- tipo de seguro -->
+    <section id="tipos-seguros-fundo" >
+    <div class="container  "  >
+        <div class="row"  >
+            <div class=" col-md-2">
+                <div class="tab">
+                    <button class="tablinks" onclick="abrirSeguro(event, 'odonto')"  id="defaultOpen" >
+                        <span> Seguro Odonto</span>
+                        <div class="icone-odonto"></div>
+                     </button>
+                     <button class="tablinks teste2" onclick="abrirSeguro(event, 'pet')" id="pet-id">
+                        <span> Seguro Pet</span>
+                        <div class="icone-pet"></div>
+                    </button>
+                </div>
+            </div>
+            <div class=" col-md-10 tabcontent" id="odonto" >
+                    <div class="row " style="height: 300px;">
+                        <div class="col-5   align-self-center" >
+                        <a  href="https://www.odontoutilis.com.br/ConnectOdontoWeb/lojaprospecto/showIniciarProposta.action?idcfg=20&token=44487&idUsuario=92460&tokenUsuario=97a13af2c06d3fb75ae9ea3caf64ccd2&tokenExterno=6cd7784f03749f3a198e278fb73c691b20190523&publico=true">
+                        
+                            
+                           <img src="img/odonto-caixa.png" alt="..." class=" img-fluid mx-auto d-block w-75 "> 
+                        
+                    </a>
+                    </div>
+                        <div class="col-2 ">
+                            <div class="barra-laranja "></div>
+                        </div>
+                        <div class="col-5 align-self-center"> 
+                            <a href="https://www.odontoutilis.com.br/ConnectOdontoWeb/lojaprospecto/showIniciarProposta.action?idcfg=20&token=44487&idUsuario=92460&tokenUsuario=97a13af2c06d3fb75ae9ea3caf64ccd2&tokenExterno=6cd7784f03749f3a198e278fb73c691b20190523&publico=true">    
+                                <img src="img/odonto-amil.png" alt="..." class=" img-fluid mx-auto d-block w-75"> </a>
+                        </div>
+                             
+                        
+
+                    </div>
+
+            </div>
+            <div class="col-md-10 tabcontent"   id="pet">
+                <div class="row " style="height: 300px;">
+                    <div class="col-md-2 ">
+                        
+                    </div>
+                    <div class="col-md-8   align-self-center " >
+                   
+                    <a href="https://www.doutorpet.com/icom">
+                    
+                        
+                       <img src="img/pet-drpet.png" alt="..." class=" img-fluid mx-auto d-block w-50 mt-5"> 
+                    
+                </a>
+                </div>
+                <div class="col-md-2 ">
+                        
+                </div>
+                         
+                    
+
+                </div>
+
+            </div>
+    </div>
+    </div>
+
+    </section>
+
+
 
     <!--depoimentos -->
     <section class="depoimentos-fundo">
@@ -382,6 +453,8 @@
 
     </section>
 
+
+
     <!--footer-->
     <footer class="menu mt-5 pt-3 footer">
         <div class="container ">
@@ -426,6 +499,7 @@
         </div>
 
     </footer>
+
 
 <!-- voltar ao topo -->
 <section>

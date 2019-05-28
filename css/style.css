@@ -276,7 +276,7 @@ padding-right: 5px;
 }
 
 .depoimentos-fundo{
-  background-image: url(../img/teste2.png);
+  background-image: url(../img/fundo-depoimentos.jpg);
   margin-bottom: 50px;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -284,7 +284,84 @@ padding-right: 5px;
   background-size: cover;
   color: #fff;
 }
+/* tipo de seguro */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+  color: white;
+  border-radius: 10px;
+  margin-top: 5px;
+  
+}
 
+.tab button:hover {
+  background-color:#fff;
+  color: black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) ;
+}
+
+
+.tab button.active {
+border: 2px solid #fff;
+color: #000;
+}
+
+.tabcontent {
+  
+
+  height: 300px;
+  color: #000;
+}
+
+.tipos-seguros-fundo2{
+background-image: url(../img/odonto-fundo.jpg);
+background-attachment: fixed;
+background-repeat: no-repeat;
+background-position: fixed;
+background-size: cover;
+
+}
+
+.tipos-seguros-fundo3{
+background-image: url(../img/pet-fundo.jpg);
+background-attachment: fixed;
+background-repeat: no-repeat;
+background-position: fixed;
+background-size: cover;
+
+}
+
+@media screen and (min-width: 1000px) {
+  .icone-pet::before{
+    content: url(../img/icone-pet.png);
+  }
+  
+  .icone-odonto::before{
+    content: url(../img/icone-odonto.png);
+  }
+  
+  }
+  @media screen and (max-width: 1000px) {
+    .icone-pet::before{
+      content: url(../img/icone-pet2.png);
+    
+    }
+  
+    .icone-odonto::before{
+      content: url(../img/icone-odonto2.png);
+    
+    }
+  
+    }
+  
 /* depoimentos */
 .img-depoimento{
 width: 150px;

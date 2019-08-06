@@ -78,12 +78,10 @@ li > a:hover:after{
 font-size: 40px; 
 }
 
-
 .overlay{
   width: 100%;
   height: 100%;
-  background: rgba(179, 179, 179, 0.25);
-
+  background: linear-gradient(rgba(43, 62, 110,0.4), rgba(255, 86, 30,0.3));
 }
 
 @media screen and (min-width: 600px) {
@@ -277,7 +275,6 @@ padding-right: 5px;
 
 .depoimentos-fundo{
   background-image: url(../img/fundo-depoimentos.jpg);
-  margin-bottom: 50px;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: fixed;
@@ -426,6 +423,7 @@ width: 250px;
   height: auto;
 }
 .testimonial .description{
+  height: 150px;
   padding: 0 15px;
   font-size: 17px;
   color: #fff;
@@ -440,14 +438,12 @@ width: 250px;
 }
 .testimonial .testimonial-title:after{
   content: url(../img/icon.png);
-  
-  font-family: "Font Awesome 5 Free"; font-weight: 900;
+  font-weight: 900;
   display: inline-block;
   width: 100%;
   font-size: 40px;
-  color: #54478a;
-  margin-top: 30px;
 }
+
 .owl-theme .owl-controls .owl-page span{
   display: block;
   width: 12px;
@@ -521,7 +517,7 @@ margin-right: auto;
 .agradecimento{
   width: 100%;
   height: 100vh;
-  background-image: url(../img/teste2.png);
+  background-image: url(../img/fundo-depoimentos.jpg);
   text-align: center;
 }
 
@@ -536,6 +532,19 @@ margin-right: auto;
   font-size: 80px;
   font-family: 'Maiden Orange', cursive !important;
 }
+
+/* seguradoras*/
+img.item{
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+
+img.item:hover{
+
+  transition:0.5s;
+    filter: grayscale(0%);
+  }
+
 
 /* rodape footer*/
 

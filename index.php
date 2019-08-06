@@ -9,7 +9,7 @@
 
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css'>
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href="css/owl.carousel.css" type="text/css">
     <!--jquery -->
     <script src='js/jquery-3.4.1.min.js'></script>
@@ -32,7 +32,7 @@
 
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-                    <li class="nav-item"> <a class="nav-link" href="#"> Área do Cliente </a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="classico/calculos_planosaude_pme.php"> Área do Cliente </a> </li>
                     <li class="nav-item"> <a class="nav-link" href="#quemsomos"> Quem Somos </a> </li>
                     <li class="nav-item"> <a class="nav-link" href="#"> Acesso Adminstrativo </a> </li>
                 </ul>
@@ -48,8 +48,6 @@
  
             <div class=" centro ">
                 <div class="container-fluid">
-
-
                     <p class="wow fadeInDown ">Pensou em saúde para sua empresa,</p>
                     <div class="row ">
                         <div class="col wow fadeInLeft">
@@ -203,30 +201,14 @@
             </div>
         </div>
 
-        <!--carousel seguradoras-->
-        <div class="owl-carousel mt-5 wow fadeIn" data-wow-delay="1s" id="seguradoras-slider" >
 
-
-
-         <div class="item"><img src="img/seguradoras/amil.png" alt="image"/></div>
-         <div class="item"><img src="img/seguradoras/sulamerica.png" alt="image" /></div>
-         <div class="item"><img src="img/seguradoras/porto-seguro.png" alt="image" /></div>
-         <div class="item"><img src="img/seguradoras/gndi.png" alt="image" /></div>
-         <div class="item"><img src="img/seguradoras/unimed.png" alt="image" /></div>
-         <div class="item"><img src="img/seguradoras/bradesco.png" alt="image" /></div>
-         <div class="item"><img src="img/seguradoras/allianz.png" alt="image" /></div>
-         <div class="item"><img src="img/seguradoras/care-plus.png" alt="image" /></div>
-         <div class="item"><img src="img/seguradoras/omint.png" alt="image" /></div>
-         <div class="item"><img src="img/seguradoras/sompo.png" alt="image" /></div> 
-
-        </div>
 
     </section>
 
 
     
-    <!-- tipo de seguro -->
-    <section id="tipos-seguros-fundo" >
+    <!-- tipo de seguro odonto e pet-->
+    <section id="tipos-seguros-fundo" class="mt-5">
     <div class="container  "  >
         <div class="row"  >
             <div class=" col-md-2">
@@ -243,23 +225,18 @@
             </div>
             <div class=" col-md-10 tabcontent" id="odonto" >
                     <div class="row " style="height: 300px;">
-                        <div class="col-5   align-self-center" >
-                        <a  href="https://www.odontoutilis.com.br/ConnectOdontoWeb/lojaprospecto/showIniciarProposta.action?idcfg=20&token=44487&idUsuario=92460&tokenUsuario=97a13af2c06d3fb75ae9ea3caf64ccd2&tokenExterno=6cd7784f03749f3a198e278fb73c691b20190523&publico=true">
+                    <div class="col-md-2 "> </div>
+                    <div class="col-md-8   align-self-center " >
+                <a target="_blank" href="https://www.odontoutilis.com.br/ConnectOdontoWeb/lojaprospecto/showIniciarProposta.action?idcfg=20&token=44487&idUsuario=92460&tokenUsuario=97a13af2c06d3fb75ae9ea3caf64ccd2&tokenExterno=6cd7784f03749f3a198e278fb73c691b20190523&publico=true">
                         
                             
-                           <img src="img/odonto-caixa.png" alt="..." class=" img-fluid mx-auto d-block w-75 "> 
+            <img src="img/odonto-caixa.png" alt="..." class=" img-fluid mx-auto d-block w-50 mt-5 "> 
                         
                     </a>
                     </div>
-                        <div class="col-2 ">
-                            <div class="barra-laranja "></div>
-                        </div>
-                        <div class="col-5 align-self-center"> 
-                            <a href="https://www.odontoutilis.com.br/ConnectOdontoWeb/lojaprospecto/showIniciarProposta.action?idcfg=20&token=44487&idUsuario=92460&tokenUsuario=97a13af2c06d3fb75ae9ea3caf64ccd2&tokenExterno=6cd7784f03749f3a198e278fb73c691b20190523&publico=true">    
-                                <img src="img/odonto-amil.png" alt="..." class=" img-fluid mx-auto d-block w-75"> </a>
-                        </div>
-                             
+                <div class="col-md-2 ">
                         
+                </div>
 
                     </div>
 
@@ -271,9 +248,7 @@
                     </div>
                     <div class="col-md-8   align-self-center " >
                    
-                    <a href="https://www.doutorpet.com/icom">
-                    
-                        
+                    <a target="_blank" href="https://www.doutorpet.com/icom">   
                        <img src="img/pet-drpet.png" alt="..." class=" img-fluid mx-auto d-block w-50 mt-5"> 
                     
                 </a>
@@ -304,12 +279,13 @@
                     <div id="depoimento-slider" class="owl-carousel">
                         <div class="testimonial wow fadeInUp">
                             <div class="pic" id="depoimento1"> </div>
+                            
                             <p class="description">
                                 A qualidade, agilidade e ética no atendimento da ICO<span class="laranja-m">M</span> não nos deixou dúvida, e hoje
                                 estamos com 100% de
                                 nossos benefícios com eles.
                             </p>
-                            <h3 class="testimonial-title">Lilian Lemos - Estrelacom</h3>
+                            <div class="testimonial-title ">Lilian Lemos - Estrelacom</div>
                         </div>
 
                         <div class="testimonial wow fadeInUp" data-wow-delay="0.2s">
@@ -319,7 +295,7 @@
                                 descomplicado, os
                                 consultores nos prestaram em excelente atendimento em todos os processos.
                             </p>
-                            <h3 class="testimonial-title">Caroline Yoshida - Vérios</h3>
+                            <div class="testimonial-title">Caroline Yoshida - Vérios</div>
                         </div>
 
                         <div class="testimonial wow fadeInUp" data-wow-delay="0.4s">
@@ -330,7 +306,7 @@
                                 atendimento e sempre somos acompanhados até a resolução. É um parceiro com qualidade
                                 ímpar.
                             </p>
-                            <h3 class="testimonial-title">Carina - G&P</h3>
+                            <div class="testimonial-title">Carina - G&P</div>
                         </div>
 
                         <div class="testimonial wow fadeInUp" data-wow-delay="0.4s">
@@ -339,7 +315,7 @@
                                 Os profissionais da ICO<span class="laranja-m">M</span> são proativos, tem iniciativa e são extremamente competentes.
                                 A Gefran gostaria de agradecer a parceria e espera contar com a ICO<span class="laranja-m">M</span> por um longo tempo.
                             </p>
-                            <h3 class="testimonial-title">Claudia Pieri - Gefran</h3>
+                            <div class="testimonial-title">Claudia Pieri - Gefran</div>
                         </div>
                     </div>
                 </div>
@@ -354,7 +330,7 @@
         <div class="separator "><span class="titulo"> Quem somos </span></div>
 
 
-        <div class="container mt-4">
+        <div class="container">
             <div class="row " >
                 <div class="col-lg-6  ">
                     <div class="logo-icon">
@@ -380,15 +356,13 @@
                 <div class="col-md-6">
                     <div class="row map-responsive border-sombra ">
 
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d29257.802950452795!2d-46.63654300000001!3d-23.560348!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb6a53ce5ab0879b4!2sICOM+seguros!5e0!3m2!1spt-BR!2sbr!4v1555515730974!5m2!1spt-BR!2sbr"
-                            frameborder="0" style="border:0" allowfullscreen></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d914.4022079807681!2d-46.64294158348941!3d-23.546567571791847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x214532ea85167737!2sPra%C3%A7a+Dom+Jos%C3%A9+Gaspar!5e0!3m2!1spt-BR!2sbr!4v1565109871432!5m2!1spt-BR!2sbr" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 
                     </div>
                     <div class="row mt-5 text-center ">
                         <div class="col ">
                             <div id="localizacao"></div>
-                            <p class="mt-3">R. José Getúlio, 89 Liberdade, São Paulo 01509-001</p>
+                            <p class="mt-3">praça dom josé gaspar, 134 CJ83 Republica, São Paulo 01046-001</p>
                         </div>
                         <div class="col ">
                             <div id="telefone">
@@ -454,59 +428,34 @@
     </section>
 
 
+<div class="separator mt-3"><span class="titulo">Seguradoras </span></div>
+        <!--carousel seguradoras-->
+        <div class="owl-carousel mt-5 wow fadeIn" data-wow-delay="1s" id="seguradoras-slider" >
 
-    <!--footer-->
-    <footer class="menu mt-5 pt-3 footer">
-        <div class="container ">
-                <div class="row">
-                    <div class="col-5 ">
-                        <div class=" py-3  text-center">Siga a ICO<span class="laranja-m">M</span> nas redes sociais</div>
 
-                        <ul class="list-inline  text-center">
-                             <li class="list-inline-item"><a class="social-icon"  href="https://pt-br.facebook.com/icomseguros/"> 
-                                 
-                                    <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" class="svg-face">
-                                        <path d="m437 0h-362c-41.351562 0-75 33.648438-75 75v362c0 41.351562 33.648438 75 75 
-                                        75h151v-181h-60v-90h60v-61c0-49.628906 40.371094-90 90-90h91v90h-91v61h91l-15 90h-76v181h121c41.351562 
-                                        0 75-33.648438 75-75v-362c0-41.351562-33.648438-75-75-75zm0 0"/></svg>
-            
-                            </a></li>
-                            <li class="list-inline-item"><a class="social-icon " 
-                                    href="https://pt.linkedin.com/company/icom-seguros">
-                                
-                                    <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" class="svg-linkedim"><path d="m437 0h-362c-41.351562 0-75 33.648438-75 75v362c0 41.351562 33.648438 75 75 75h362c41.351562 0 75-33.648438 75-75v-362c0-41.351562-33.648438-75-75-75zm-256 406h-60v-210h60zm0-240h-60v-60h60zm210 240h-60v-120c0-16.539062-13.460938-30-30-30s-30 13.460938-30 30v120h-60v-210h60v11.308594c15.71875-4.886719 25.929688-11.308594 45-11.308594 40.691406.042969 75 36.546875 75 79.6875zm0 0"/></svg>    
-                                
-                                
-                            </a></li>
-                            <li class="list-inline-item"><a class="social-icon "
-                                    href="https://www.instagram.com/icomseguros/?hl=pt-br">
-                                    <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" class="svg-intagram"><path d="m437 0h-362c-41.351562 0-75 33.648438-75 75v362c0 41.351562 33.648438 75 75 75h362c41.351562 0 75-33.648438 75-75v-362c0-41.351562-33.648438-75-75-75zm-180 390c-74.441406 0-135-60.558594-135-135s60.558594-135 135-135 135 60.558594 135 135-60.558594 135-135 135zm150-240c-24.8125 0-45-20.1875-45-45s20.1875-45 45-45 45 20.1875 45 45-20.1875 45-45 45zm0 0"/><path d="m407 90c-8.277344 0-15 6.722656-15 15s6.722656 15 15 15 15-6.722656 15-15-6.722656-15-15-15zm0 0"/><path d="m257 150c-57.890625 0-105 47.109375-105 105s47.109375 105 105 105 105-47.109375 105-105-47.109375-105-105-105zm0 0"/></svg>
-                                </a></li>  
 
-                    </div>
-                    <div class="col-2 ">  <div class="barra-laranja "></div> </div>
-                    <div class="col-5 " >  
-                            <div class=" py-3" >Alguns de nossos parceiros</div>
-                            <a href="https://sp.abrasel.com.br/"><div id="img-abrasel"></div></a>
-                            <a href="https://sociotorcedorgfc.com.br/"><div id="img-socio-campeao"  ></div></a>
-                    
-                    
-                    </div>
-                </div>
-                <div class=" py-5  text-center">© 2019 Copyright: ICO<span class="laranja-m">M</span> Seguros</div>
-            </ul>
-            <i class="font-size-13">* os valores do planos estão sujeitos a mudanças</i>
+         <div ><img class="item" src="img/seguradoras/amil.png" alt="image"/></div>
+         <div ><img class="item" src="img/seguradoras/sulamerica.png" alt="image" /></div>
+         <div ><img class="item" src="img/seguradoras/porto-seguro.png" alt="image" /></div>
+         <div ><img class="item" src="img/seguradoras/gndi.png" alt="image" /></div>
+         <div ><img class="item" src="img/seguradoras/unimed.png" alt="image" /></div>
+         <div ><img class="item" src="img/seguradoras/bradesco.png" alt="image" /></div>
+         <div ><img class="item" src="img/seguradoras/allianz.png" alt="image" /></div>
+         <div ><img class="item" src="img/seguradoras/care-plus.png" alt="image" /></div>
+         <div ><img class="item" src="img/seguradoras/omint.png" alt="image" /></div>
+         <div ><img class="item" src="img/seguradoras/sompo.png" alt="image" /></div> 
+
         </div>
 
-    </footer>
-
+<!--footer-->
+<?php include 'footer.php'; ?>
 
 <!-- voltar ao topo -->
 <section>
     <div class="voltar-topo">Faça sua <br>cotação agora mesmo</div>
     <div class="smoothscroll-top">
         
-            <?xml version="1.0" encoding="iso-8859-1"?>
+            
            
             <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                  viewBox="0 0 476.737 476.737" style="enable-background:new 0 0 476.737 476.737;" xml:space="preserve" class="svg-voltar-ao-topo">
@@ -538,9 +487,7 @@
 <link rel="stylesheet" href="css/animate.css">
 <script src="js/wow.min.js"></script>
 <!--validação jquey-->
-<script src="/js/jquery.validate.min.js"></script>
-
-
+<script src="js/jquery.validate.min.js"></script>
 
 <script src="js/index.js"></script>
 

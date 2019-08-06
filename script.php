@@ -17,7 +17,8 @@
 
 <body>
     <?php
-    $assunto = .$_POST['assunto'];
+    $assunto = $_POST['assunto'];
+    $email = $_POST['email'];
     $corpo = "
         nome:"          .$_POST['nome']."
         assunto:"       .$_POST['assunto']."
@@ -25,8 +26,8 @@
         mensagem:"      .$_POST['mensagem']."
      ";
     
-    mail('song-shik@hotmil.com',$assunto,$corpo,'From : song.vasconcellos@icomseguros.com.br');
-    echo 'Obrigrado pelo contato em breve retornamos';
+    mail('marketing@icomseguros.com.br',$assunto,$corpo,$email);
+    
     ?>
   <!-- menu -->
   <section>
@@ -80,24 +81,8 @@
       </section>
 
   
-  <!--footer-->
-  <footer class="menu  footer">
-    <div class="container">
-
-      <div class=" py-3  text-center">© 2019 Copyright: ICOM Seguros</div>
-
-      <ul class="list-inline  text-center">
-        <li class="list-inline-item"><a class="" id="icon-facebook" href="#"></a></li>
-        <li class="list-inline-item"><a class="" id="icon-linkedin" target="_blank"
-            href="#"></a></li>
-        <li class="list-inline-item"><a class="" id="icon-instagram" target="_blank"
-            href="#"></a></li>
-      </ul>
-      
-    </div>
-
-
-  </footer>
+<!--footer-->
+<?php include 'footer.php'; ?>
 
 
 </body>

@@ -112,8 +112,8 @@ $(document).ready(function(){
 
 
 
-/* parallax */
-$('.parallax-window').parallax({imageSrc: 'img/5.jpg'}); 
+/* parallax  imagem principal*/
+$('.parallax-window').parallax({imageSrc: 'img/raiz2.png'}); 
 
 /* wow animated.css */ 
 new WOW().init();
@@ -168,7 +168,7 @@ function abrirSeguro(evt, seguro) {
   evt.currentTarget.className += " active";
 }
 
-// elemento quando abrir a pagina
+// formulario
 document.getElementById("defaultOpen").click();
 $('#tipos-seguros-fundo').addClass('tipos-seguros-fundo2');
 
